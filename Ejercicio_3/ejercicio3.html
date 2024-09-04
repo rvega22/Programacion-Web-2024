@@ -165,6 +165,7 @@
 
         <footer>
             <h2>Adoptame</h2>
+            <p>En este apartado podras ingresar tus datos para adoptar a un gato</p>
             <form action="submit" method="post">
                 <fieldset>
                     <legend>Informacion para adopcion</legend> 
@@ -175,12 +176,69 @@
                         name="name"
                         placeholder="Ingresa tu nombre"
                         required>
-
+                        <br>
+                        <br>
                     
                     <label for="email">Email</label>
-                        
-                </fieldset>
+                        <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Ingrese su email"
+                        required>
+                        <br>
+                        <br>
 
+                    <label>
+                        Motivo de adopcion
+                        <textarea 
+                            required
+                            name="Descripcion"
+                            rols="20"
+                            cols="70"
+                            placeholder="Ingrese el motivo por el cual desea adoptar un gato">
+                        </textarea>
+                        <br>
+                        <br>
+                    </label>
+
+                    <label for="contacto">Motivo de contacto</label>
+                    <select name="contacto" id="contacto">
+                        <optgroup label="Asustos personales">
+                            <option>Para tener un compañero</option>
+                            <option>Para poder cuidar a alguien</option>
+                            <option>Por que siempre quise un gato</option>
+                        </optgroup>
+
+                        <optgroup label="Animal de apoyo">
+                            <option>Porque me siento solo</option>
+                            <option>Porque un medico me recomendo un animal de apoyo</option>
+                            <option>Apoyo terapeutico</option>
+                        </optgroup>
+
+                        <optgroup label="Niños">
+                            <option>Mis hijos quieren un gato</option>
+                        </optgroup>
+                    </select>
+                    <br>
+                    <br>
+
+                    <label for="gato">Tipo de gato</label>
+                    <input list="opciones" id="gato" name="gato">
+                    <datalist id="opciones">
+                        <option value="Abisinio">
+                        <option value="American wirehair">
+                        <option value="Asiático">
+                        <option value="Birmano">
+                        <option value="Burmés">
+                        <option value="Gato británico de pelo corto">
+                        <option value="Gato Persa de pelo largo">
+                    </datalist>
+                    <br>
+
+                    <button type="submit">Enviar</button>
+                </fieldset>
+                
             </form>
 
         </footer>
