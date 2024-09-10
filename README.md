@@ -5,4 +5,4 @@ Ejercicios de HTML
 3. [03 Ejercicio: Formularios y metadatos](/Ejercicio_3/ejercicio3.html)
 
 Ejercicios de CSS
-4. [01 Ejercicio: Formato de texto, fuentes, fondos y border](/CSS/Ejercicio_1_CSS_Nuevo_Formato/Ejercicio_1_Formato_De_texto_fondo.html)
+1. [01 Ejercicio: Formato de texto, fuentes, fondos y border](/CSS/Ejercicio_1_CSS_Nuevo_Formato/Ejercicio_1_Formato_De_texto_fondo.html)
