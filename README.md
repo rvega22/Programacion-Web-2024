@@ -7,3 +7,4 @@ Ejercicios de HTML
 Ejercicios de CSS
 1. [01 Ejercicio: Formato de texto, fuentes, fondos y border](/CSS/Ejercicio_1_CSS_Nuevo_Formato/Ejercicio_1_Formato_De_texto_fondo.html)
 2. [02 Ejercicio: Tarjeta](CSS/Ejercicio_2_CSS/Ejercicio_2.html)
+3. [03 Ejercicio: Header sticky](CSS/Ejercicio_3_CSS/index.html)
