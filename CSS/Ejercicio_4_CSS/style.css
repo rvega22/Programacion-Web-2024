@@ -7,7 +7,7 @@
 }
 
 form {
-    background: rgba(241, 212, 133, 0.849);
+    background: rgba(47, 104, 187, 0.849);
     align-items: center;
     max-width: 550px;
     width: 500px;
@@ -81,11 +81,15 @@ button {
     padding: 2%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 22px;
-    background: rgb(173, 52, 62);
+    background: rgb(49, 62, 145);
     margin-left: 25%;
     margin-top: 5%;
 }
 
 button:hover {
-    background: rgb(240, 69, 83);
+    background: rgb(71, 92, 224);
+}
+
+button:active {
+    background: rgb(245, 245, 245);
 }
