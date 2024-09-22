@@ -1,0 +1,91 @@
+.box_cuestionario {
+    display: flex;
+    margin-left: 25%;
+    margin-top: 2%;
+    align-items: center;
+    align-content: center;
+}
+
+form {
+    background: rgba(241, 212, 133, 0.849);
+    align-items: center;
+    max-width: 550px;
+    width: 500px;
+    padding: 4%;
+    border-radius: 10px;
+    box-shadow: -9px -7px 20px 4px rgba(112, 106, 106, 0.678);
+}
+
+form:hover {
+    box-shadow: 9px 7px 30px 6px rgba(112, 106, 106, 0.678);
+}
+
+input, textarea, select {
+    background: rgb(19, 49, 92);
+    color: rgb(252, 255, 252);;
+    border: 0 double;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box;
+    margin-bottom: 4%;
+    padding: 0.5%;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+::selection {
+    background: rgb(252, 255, 252);
+    color: rgba(16, 107, 235, 0.8);
+}
+
+input:hover, textarea:hover, select:hover {
+    outline: 3px solid rgb(127, 134, 255);
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 3px solid rgb(171, 174, 240);
+    box-shadow: 0 12px 25px rgba(27, 26, 26, 0.6);
+}
+
+h2::before {
+    content: "❗";
+}
+
+h2::after {
+    content: "❗";
+}
+
+#letra_titulos {
+    text-align: center;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+
+::placeholder {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(252, 255, 252);;
+}
+
+label {
+    display: block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+button {
+    border-radius: 10px;
+    border: 0 solid;
+    width: 50%;
+    padding: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    background: rgb(173, 52, 62);
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+button:hover {
+    background: rgb(240, 69, 83);
+}
