@@ -3,6 +3,7 @@ header {
     height: 10%;
     display: flex;
     position: sticky;
+    z-index: 99;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
 
 .link {
     color: black;
+    list-style: none;
 }
 
 .main_link {
@@ -40,8 +42,8 @@ h1 {
 
 .centrado {
     display: flex;
-    margin-top: 3.5%;
-    margin-left: 15%;
+    margin-top: 4.5%;
+    margin-left: 12%;
     width: 80%;
     align-items: center;
     gap: 60px;
@@ -59,6 +61,14 @@ h1 {
     font-size: 80%;
 }
 
+.letras {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Raleway;
+    font-size: 80%;
+    color: rgb(242, 242, 242);
+}
+
 .alineacion {
     margin-top: 1%;
     margin-left: 2%;
@@ -67,10 +77,10 @@ h1 {
 
 .imagenes {
     display: inline-block;
-    height: 50%;
+    height: 40%;
     width: 15%;
     margin-right: 11%;
-    margin-top: 4%;
+    margin-top: 5.6%;
 }
 
 main {
@@ -79,6 +89,7 @@ main {
     display: flex;
     justify-content: center; 
     align-items: center; 
+    z-index: 5;
 }
 
 .box_main {
@@ -88,15 +99,110 @@ main {
     width: 75%;
     display: flex;
     border-radius: 10px;
-    padding: 5%;
+    padding: 3%;
 }
 
 .imagen_main {
-    margin-left: 20%;
-    width: 95%;
-    
+    margin-left: 18%;
+    width: 90%;
+    height: 105%;
+    border-radius: 5px;
+    z-index: 3;
+    position: relative;
+}
+
+.imagen_descuento {
+    margin-left: 2%;
+    width: 16%;
+    height: 35%;
+    position: absolute;
+    z-index: 2;
+}
+
+.cuadro_decoracion {
+    margin-left: 3%;
+    margin-top: -24%;
+    background-color: rgb(252, 255, 252);
+    height: 40%;
+    width: 25%;
+    position: absolute;
 }
 
 .ofertas_info {
     margin-left: 3%;
+    color: whitesmoke;
+    font-size: 240%;
+}
+
+#tamaño_de_letra {
+    font-size: 50%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.button_info {
+    border-radius: 10px;
+    border: 0 solid;
+    width: 50%;
+    padding: 1%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    background: rgb(47, 104, 187);
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+.target {
+    display: inline-block;
+    justify-content: center;
+    width: 15%;
+    height: 60%;
+    background-color: rgb(242, 242, 242);
+    padding: 1%;
+    color: rgb(0, 0, 0);
+    margin-top: 10%;
+    margin-left: 1%;
+    font-family: Raleway;
+    font-size: 14px;
+}
+
+.centrar_img {
+    margin-left: 16%;
+}
+
+.target_img {
+    width: 70%;
+    height: 80%;
+    
+}
+
+.centrar_nav {
+    margin-left: 7%;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(23, 30, 73);
+    font-style: rgb(255, 252, 255);
+    font-style: none;
+    width: 250px;
+    z-index: 999;
+    top: 40%;
+    padding: 0;
+    box-shadow: 2px 2px 5px 0 gray;
+    border-radius: 5px;
+    
+}
+
+li:hover .submenu{
+    display: block;
+    z-index: 99;
+}
+
+.submenu li {
+    text-align: left;
+    padding: 0;
+    display: block;
+    padding: 10px;
+    z-index: 99;
 }
