@@ -9,3 +9,4 @@ Ejercicios de CSS
 2. [02 Ejercicio: Tarjeta](CSS/Ejercicio_2_CSS/Ejercicio_2.html)
 3. [03 Ejercicio: Header sticky](CSS/Ejercicio_3_CSS/index.html)
 4. [04 Ejercicio: Formulario con estilos, pseudoelementos y pseudoclases](CSS/Ejercicio_4_CSS/index.HTML)
+5. [05 Ejercicio: Sitio con tarjetas (Flex)](CSS/Ejercicio_5_CSS/index.html)
