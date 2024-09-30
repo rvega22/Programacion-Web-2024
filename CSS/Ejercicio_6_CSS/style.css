@@ -174,7 +174,7 @@ main {
 }
 
 .target {
-    display: block;
+    display: inline-block;
     justify-content: var(--alineacion);
     width: 16%;
     height: 60%;
@@ -206,10 +206,25 @@ main {
     margin-left: calc(var(--margin-left) - 13%);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    min-width: 1vw;
     max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .target {
+        width: 45%; 
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .target {
+        width: 100%; 
+        margin-top: 20px;
+    }
 }
 
 .submenu {
@@ -224,7 +239,6 @@ main {
     padding: 0;
     box-shadow: 2px 2px 5px 0 rgb(25, 19, 114);
     border-radius: calc(var(--border-radius) - 5px);
-    
 }
 
 li:hover .submenu{
