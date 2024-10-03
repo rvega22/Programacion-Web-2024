@@ -11,3 +11,4 @@ Ejercicios de CSS
 4. [04 Ejercicio: Formulario con estilos, pseudoelementos y pseudoclases](CSS/Ejercicio_4_CSS/index.HTML)
 5. [05 Ejercicio: Sitio con tarjetas (Flex)](CSS/Ejercicio_5_CSS/index.html)
 6. [06 Ejercicio: Variables y funciones](CSS/Ejercicio_6_CSS/index.html) 
+7. [07 Ejercicio: CSS Grid](CSS/Ejercicio_7_CSS/index.html) 
