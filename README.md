@@ -14,3 +14,6 @@ Ejercicios de CSS
 7. [07 Ejercicio: CSS Grid](CSS/Ejercicio_7_CSS/index.html) 
 8. [08 Ejercicio: Sitio responsivo](CSS/Ejercicio_8_CSS/index.html)  
 9. [09 Ejercicio: Sitio Web](CSS/Examen_CSS/index.html)  
+
+Ejercicios de JavaScript
+1. [01 Ejercicio: Calculadora](JavaScript/Ejercicio_1_JS/index.html)
