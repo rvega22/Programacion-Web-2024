@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+
+    <script>
+
+        const numero1 = parseInt(prompt("Elige el un numero", 0));
+        const numero2 = parseInt(prompt("Elige el un numero", 0));
+        const signo = prompt("Escribe que operacion quieres hacer");
+
+        function operacion(a,b,c) {
+            if (Number.isNaN(a) || Number.isNaN(b)) {
+                console.log("Un valor no es numero");
+            }
+            switch (c) {
+                case "+":
+                    console.log(a + b);
+                    break;
+
+                case "-":
+                    console.log(a - b);
+                    break;
+
+                case "/":
+                    if (b === 0) {
+                        console.log("No se puede dividir entre 0");
+                    } else {
+                        console.log(a / b)
+                    }
+                    break;
+
+                case "*":
+                    console.log(a * b)
+                    break;
+            
+                default:
+                    console.log("No eligio una operacion valida")
+                    break;
+            }
+        }
+        
+        operacion(numero1,numero2,signo)
+    </script>
+</body>
+</html>
