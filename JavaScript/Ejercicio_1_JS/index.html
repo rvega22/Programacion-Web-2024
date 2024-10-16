@@ -14,29 +14,29 @@
         const numero2 = parseInt(prompt("Elige el un numero", 0));
         const signo = prompt("Escribe que operacion quieres hacer");
 
-        function operacion(a,b,c) {
-            if (Number.isNaN(a) || Number.isNaN(b)) {
+        function operacion(num1,num2,sig) {
+            if (Number.isNaN(num1) || Number.isNaN(num2)) {
                 console.log("Un valor no es numero");
             }
-            switch (c) {
+            switch (sig) {
                 case "+":
-                    console.log(a + b);
+                    console.log(num1 + num2);
                     break;
 
                 case "-":
-                    console.log(a - b);
+                    console.log(num1 - num2);
                     break;
 
                 case "/":
-                    if (b === 0) {
+                    if (num2 === 0) {
                         console.log("No se puede dividir entre 0");
                     } else {
-                        console.log(a / b)
+                        console.log(num1 / num2)
                     }
                     break;
 
                 case "*":
-                    console.log(a * b)
+                    console.log(num1 * num2)
                     break;
             
                 default:
