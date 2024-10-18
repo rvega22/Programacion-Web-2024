@@ -17,3 +17,4 @@ Ejercicios de CSS
 
 Ejercicios de JavaScript
 1. [01 Ejercicio: Calculadora](JavaScript/Ejercicio_1_JS/index.html)
+2. [02 Ejercicio: Manipulación de estilos](JavaScript/Ejercicio_2_JS/index.html)
