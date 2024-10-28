@@ -43,33 +43,42 @@ function check() {
             } else {
                 $span.style.textDecoration = "none";
             }
+            localStorageGuardar()
         }
     });
 }
 
 function localStorageGuardar() {
     const guardar = [];
+    const line_through = [];
     const tareas = document.querySelectorAll(".text");
     tareas.forEach(element => {
-        
-        guardar.push(element.textContent)
+        guardar.push(element.textContent);
+        line_through.push(element.style.textDecoration === "line-through");
     });
-    console.log(guardar)
     localStorage.setItem("Tareas",JSON.stringify(guardar));
+    localStorage.setItem("Subrayado",JSON.stringify(line_through));
 }
 
 function localStorageImprimir() {
     const tareas = JSON.parse(localStorage.getItem("Tareas"));
-    if (tareas) {
-        tareas.forEach(texto => {
+    const line_through = JSON.parse(localStorage.getItem("Subrayado"));
+
+    if (tareas && line_through) {
+        tareas.forEach((texto,index) => {
             const text = texto;
             const li = d.createElement("li");
             li.className = "li";
             const span = d.createElement("span");
             span.textContent = text;
             span.className = "text";
+            
             const checkbox = document.createElement("input");
             checkbox.type = "checkbox";
+            if (line_through[index]) {
+                span.style.textDecoration = "line-through";
+                checkbox.checked = true;
+            }
             const btnDelete = d.createElement("button");
             btnDelete.textContent = "Eliminar";
             btnDelete.className = "eliminar";
