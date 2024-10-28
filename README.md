@@ -19,3 +19,4 @@ Ejercicios de JavaScript
 1. [01 Ejercicio: Calculadora](JavaScript/Ejercicio_1_JS/index.html)
 2. [02 Ejercicio: Manipulación de estilos](JavaScript/Ejercicio_2_JS/index.html)
 3. [03 Ejercicio: Calculadora visual](JavaScript/Ejercicio_3_JS/index.html)
+4. [04 Ejercicio: Lista de tareas](JavaScript/Ejercicio_4_JS/index.html)
