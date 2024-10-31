@@ -20,3 +20,4 @@ Ejercicios de JavaScript
 2. [02 Ejercicio: Manipulación de estilos](JavaScript/Ejercicio_2_JS/index.html)
 3. [03 Ejercicio: Calculadora visual](JavaScript/Ejercicio_3_JS/index.html)
 4. [04 Ejercicio: Lista de tareas](JavaScript/Ejercicio_4_JS/index.html)
+5. [05 Ejercicio: Tarjeta con datos base de un gato](JavaScript/Ejercicio_5_JS/tarjeta.html) 
