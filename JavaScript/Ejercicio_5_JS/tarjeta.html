@@ -9,19 +9,58 @@
 <body>
     <main class="tarjeta">
         <div class="foto">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcST4vFqkon9beoNKaEGwJsaFJTR7l61rtMhYJgvHEWuc0QT5ajF" alt="Gato" class="imagen">
+            <img id="catImage" src="" alt="" class="imagen">
         </div>
 
         <div class="texto">
-            <h1>Siamese Cat</h1>
-            <p><strong>Temperament:</strong> Vocal, Social, Intelligent, Curious, Active, Affectionate</p>
-            <p><strong>Lifespan:</strong> 15 - 20 years</p>
-            <p><strong>Description:</strong> Siamese cats are known for their elegant and distinctive appearance, with a short, light-colored coat that contrasts with dark markings on their face, ears, paws, and tail. They are highly social and vocal cats, often "talking" to their owners. Siamese cats are loyal, affectionate, and love being around people, though they can be quite demanding of attention.</p>
-            <p><strong>Kid-friendly:</strong> 5</p>
-            <p><strong>Dog-friendly:</strong> 4</p>
-            <p><strong>Origin:</strong> Thailand</p>
-            <p>Enlace a Wikipedia: <a href="https://en.wikipedia.org/wiki/Siamese_cat" target="_blank">Más información</a></p>
+            <h1 id="catName"></h1>
+            <p><strong>Temperamento:</strong> <span id="temperament"></span></p>
+            <p><strong>Años de vida:</strong> <span id="lifeSpan"></span></p>
+            <p><strong>Descripción:</strong> <span id="description"></span></p>
+            <p><strong>Amigable con niños:</strong> <span id="friendly-child"></span></p>
+            <p><strong>Amigable con perros:</strong> <span id="dog-Friendly"></span></p>
+            <p><strong>Origen:</strong> <span id="origin"></span></p>
+            <p><strong>Enlace a Wikipedia:</strong> <a id="wiki" href="#" target="_blank">Más información</a></p>
         </div>
     </main>
+
+    <script>
+        const apiUrl = "https://api.thecatapi.com/v1/breeds";
+        async function gato() {
+            try {
+                const response = await fetch(apiUrl, {
+                    headers: {
+                        'x-api-key' : 'live_THpkayjwSS7MDEeQHwSiOKxkZefMs6vBb10GHBkrGC5iidt7erU53g7nEwbZtdC9'
+                    }
+                });
+
+                if (!response.ok) {
+                    const errorMessage = await response.text();
+                    throw new Error('Error: ' + errorMessage);
+                }
+
+                const breeds = await response.json();
+                const randomCat = breeds[25];
+                console.log(randomCat);
+                displayBreedDetails(randomCat);
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        function displayBreedDetails(breed) {
+            document.getElementById("catImage").src = breed.image?.url || '';
+            document.getElementById("catName").textContent = breed.name;
+            document.getElementById("temperament").textContent = breed.temperament;
+            document.getElementById("lifeSpan").textContent = breed.life_span;
+            document.getElementById("description").textContent = breed.description;
+            document.getElementById("friendly-child").textContent = breed.child_friendly;
+            document.getElementById("dog-Friendly").textContent = breed.dog_friendly;
+            document.getElementById("origin").textContent = breed.origin;
+            document.getElementById("wiki").href = breed.wikipedia_url;
+        }
+
+        gato();
+    </script>
 </body>
 </html>
